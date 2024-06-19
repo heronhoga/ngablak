@@ -12,9 +12,12 @@ function Home() {
       <Navbar />
 
       {/* CONTENT */}
-      {/* <div>
-        <Image src="/images/scenery.jpg" alt="ngablak" width={1920} height={1080}></Image>
-      </div> */}
+      <div id="title" className="mt-10">
+        <h1 className="text-center font-bold italic text-2xl md:text-3xl lg:text-4xl">PROFIL</h1>
+        <h1 className="text-center font-bold italic text-3xl md:text-4xl lg:text-5xl">DESA NGABLAK</h1>
+        <hr className="mx-5 mt-3" />
+        <h2 className="mt-3 text-center text-sm md:text-lg lg:text-xl">Kecamatan Wonosamodro, Kabupaten Boyolali</h2>
+      </div>
     </div>
   );
 }
