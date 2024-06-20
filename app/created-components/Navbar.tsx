@@ -20,7 +20,7 @@ function Navbar() {
           alt="Logo"
           width={448}
           height={682}
-          className="h-12 w-20 md:h-24 md:w-40"
+          className="h-12 w-[40px] md:h-24 md:w-[80px] mx-4"
         />
         <h1 className="ml-2 md:ml-4">DESA NGABLAK</h1>
       </div>
