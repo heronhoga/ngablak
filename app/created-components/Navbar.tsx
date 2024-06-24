@@ -13,7 +13,7 @@ function Navbar() {
   };
 
   return (
-    <div className="py-2 flex items-center justify-between bg-blue-950 font-semibold rounded-b-[2.5rem] shadow-sm md:shadow-lg text-sm md:text-lg lg:text-xl text-white">
+    <div className="sticky top-0 py-2 flex items-center justify-between bg-blue-950 font-semibold rounded-b-[2.5rem] shadow-sm md:shadow-lg text-sm md:text-lg lg:text-xl text-white z-20">
       <div className="flex items-center">
         <Image
           src="/images/logo-kabupaten.png"
@@ -28,17 +28,11 @@ function Navbar() {
         <Link href="/" className="mx-1 md:mx-3">
           Beranda
         </Link>
-        <Link href="/profil" className="mx-1 md:mx-3">
-          Profil Desa
+        <Link href="/galeri" className="mx-1 md:mx-3">
+          Galeri
         </Link>
-        <Link href="/berita" className="mx-1 md:mx-3">
-          Berita
-        </Link>
-        <Link href="/kelembagaan" className="mx-1 md:mx-3">
-          Kelembagaan
-        </Link>
-        <Link href="/pemberdayaan" className="mx-1 md:mx-3">
-          Pemberdayaan
+        <Link href="/struktur" className="mx-1 md:mx-3">
+          Struktur Organisasi
         </Link>
         <Link href="/layanan" className="mx-1 md:mx-3">
           Layanan
@@ -47,34 +41,35 @@ function Navbar() {
           Kontak Kami
         </Link>
       </div>
-      <div className="xl:hidden mr-8 z-10" onClick={toggleMenu}>
+      <button
+        className="xl:hidden mr-8 z-30 focus:outline-none"
+        aria-label="Toggle menu"
+        onClick={toggleMenu}
+      >
         {isOpen ? <Close size={24} /> : <GiHamburgerMenu size={24} />}
+      </button>
+      <div
+        className={`flex flex-col xl:hidden absolute top-0 left-0 w-full bg-blue-950 z-10 transition-transform duration-300 ease-in-out transform ${
+          isOpen ? "translate-y-0" : "-translate-y-full"
+        }`}
+        style={{ paddingTop: "4rem" }}
+      >
+        <Link href="/" className="m-3" onClick={toggleMenu}>
+          Beranda
+        </Link>
+        <Link href="/galeri" className="m-3" onClick={toggleMenu}>
+          Galeri
+        </Link>
+        <Link href="/struktur" className="m-3" onClick={toggleMenu}>
+          Struktur Organisasi
+        </Link>
+        <Link href="/layanan" className="m-3" onClick={toggleMenu}>
+          Layanan
+        </Link>
+        <Link href="/kontak" className="m-3" onClick={toggleMenu}>
+          Kontak Kami
+        </Link>
       </div>
-      {isOpen && (
-        <div className="flex flex-col xl:hidden absolute top-16 md:top-10 lg:top-11 left-0 w-full bg-blue-950 z-0">
-          <Link href="/" className="m-3" onClick={toggleMenu}>
-            Beranda
-          </Link>
-          <Link href="/profil" className="m-3" onClick={toggleMenu}>
-            Profil Desa
-          </Link>
-          <Link href="/berita" className="m-3" onClick={toggleMenu}>
-            Berita
-          </Link>
-          <Link href="/kelembagaan" className="m-3" onClick={toggleMenu}>
-            Kelembagaan
-          </Link>
-          <Link href="/pemberdayaan" className="m-3" onClick={toggleMenu}>
-            Pemberdayaan
-          </Link>
-          <Link href="/layanan" className="m-3" onClick={toggleMenu}>
-            Layanan
-          </Link>
-          <Link href="/kontak" className="m-3" onClick={toggleMenu}>
-            Kontak Kami
-          </Link>
-        </div>
-      )}
     </div>
   );
 }

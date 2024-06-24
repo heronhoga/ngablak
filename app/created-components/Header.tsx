@@ -7,7 +7,7 @@ function Header() {
     <div>
       <div
         id="header"
-        className="flex flex-col justify-center md:flex-row md:justify-start items-start md:items-center bg-gradient-to-r from-blue-600 to-cyan-400 text-white p-2"
+        className="flex flex-col justify-center md:flex-row md:justify-start items-start md:items-center bg-gradient-to-r from-blue-600 to-cyan-400 text-white p-1"
       >
         <div className="flex items-center space-x-1 mb-2 md:mb-0 md:mx-3">
           <AiOutlinePhone className="text-xl" />
