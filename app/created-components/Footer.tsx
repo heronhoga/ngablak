@@ -2,7 +2,7 @@ import React from "react";
 import FiGlobe from "../icons/globe";
 import AiOutlinePhone from "../icons/phone";
 import AiOutlineMail from "../icons/email";
-function Header() {
+function Footer() {
   return (
     <div>
       <div
@@ -22,4 +22,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Footer;

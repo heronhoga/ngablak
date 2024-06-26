@@ -3,6 +3,7 @@ import Navbar from "./created-components/Navbar";
 import Carousel from "./created-components/Carousel";
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "./created-components/Footer";
 
 function Home() {
   const images = [
@@ -12,7 +13,7 @@ function Home() {
   ];
 
   return (
-    <div>
+    <div className="">
       {/* NAVBAR */}
       <Navbar />
 
@@ -32,7 +33,7 @@ function Home() {
       </div>
       {/* CAROUSEL AND TEXT */}
       <div className="grid grid-cols-1 gap-3 px-3 mt-10 xl:grid-cols-2">
-        <div className="w-72 mx-auto sm:w-[500px] md:w-[700px] xl:w-[550px]">
+        <div className="w-64 mx-auto sm:w-[500px] md:w-[700px] xl:w-[550px]">
           <Carousel images={images} />
         </div>
         <div className="text-justify mt-3 xl:mr-16">
@@ -123,11 +124,70 @@ function Home() {
           id="link-wrapper"
           className="border inline-block border-black px-3 py-1 rounded-md shadow-lg"
         >
-          <Link href="/galeri" className="italic font-semibold">Lihat galeri lainnya</Link>
+          <Link href="/galeri" className="italic font-semibold">
+            Lihat galeri lainnya
+          </Link>
         </div>
       </div>
 
       <hr className="mt-10" />
+
+      <hr className="mt-10 mx-32" />
+      <div id="title" className="mt-3">
+        <h1 className="text-center font-bold italic text-2xl md:text-3xl lg:text-4xl">
+          LOKASI
+        </h1>
+        <hr className="mx-32 mt-3" />
+      </div>
+
+      {/* MAP DAN INFORMASI LOKASI */}
+      <div id="location" className="mt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+          <div className="mx-auto">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13947.473675569145!2d110.61416596290738!3d-7.32679669434537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a75d712309577%3A0xbbd3d826c3eeab2e!2sNgablak%2C%20Wonosegoro%2C%20Boyolali%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1719385360662!5m2!1sen!2sid"
+              width="400"
+              height="300"
+              style={{ border: 0 }}
+              loading="lazy"
+              className="w-64 h-64 sm:w-96 md:w-[450px] md:h-[400px]"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <hr className="mt-3 mx-8 lg:hidden" />
+          <div className="mx-8">
+            <div className="grid grid-cols-1 border p-5 border-black rounded-lg shadow-md">
+              <div>
+                <p>
+                  <span className="font-semibold italic">
+                    Alamat Kantor desa
+                  </span>{" "}
+                  : asdasdasd
+                </p>
+              </div>
+              <div>
+                <p>
+                  <span className="font-semibold italic">Koordinat Desa</span> :
+                  -7.32679669434537, 110.61416596290738
+                </p>
+              </div>
+              <div>
+                <p>
+                  <span className="font-semibold italic">Luas Wilayah</span> :
+                  0.0 ha
+                </p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr className="mt-10" />
+
+      <div id="footer" className="mt-10">
+        <Footer/>
+      </div>
     </div>
   );
 }
