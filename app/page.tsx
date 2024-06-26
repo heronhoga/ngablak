@@ -65,6 +65,71 @@ function Home() {
       <hr className="mt-10 mx-32" />
       <div id="title" className="mt-3">
         <h1 className="text-center font-bold italic text-2xl md:text-3xl lg:text-4xl">
+          VISI DAN MISI
+        </h1>
+        <hr className="mx-32 mt-3" />
+      </div>
+
+      {/* VISI */}
+      <div
+        id="vision"
+        className="mt-10 border border-black mx-10 p-5 rounded-lg shadow-md"
+      >
+        <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold italic">
+          VISI
+        </h3>
+        <hr className="mt-3" />
+        <p className="text-justify mt-3">
+          "Menjadikan Desa Ngablak sebagai desa mandiri yang berdaya saing,
+          berbudaya, dan berwawasan lingkungan dalam mewujudkan kesejahteraan
+          masyarakat."
+        </p>
+      </div>
+
+      {/* MISI */}
+
+      <div
+        id="mission"
+        className="mt-10 border border-black mx-10 p-5 rounded-lg shadow-md"
+      >
+        <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold italic">
+          MISI
+        </h3>
+        <hr className="mt-3" />
+        <ol className="list-decimal p-5 text-justify">
+          <li>
+            Pemberdayaan Ekonomi: Meningkatkan kesejahteraan masyarakat melalui
+            pengembangan potensi lokal, pemberdayaan usaha mikro, kecil, dan
+            menengah (UMKM), serta mendorong inovasi ekonomi kreatif.
+          </li>
+          <li>
+            Peningkatan Infrastruktur: Membangun dan meningkatkan infrastruktur
+            desa yang mendukung aktivitas ekonomi, pendidikan, kesehatan, dan
+            sosial masyarakat.
+          </li>
+          <li>
+            Pelestarian Budaya dan Lingkungan: Melestarikan dan mengembangkan
+            budaya lokal serta menjaga kelestarian lingkungan melalui
+            program-program berkelanjutan.
+          </li>
+          <li>
+            Pendidikan dan Kesehatan: Meningkatkan akses dan kualitas pendidikan
+            serta pelayanan kesehatan untuk menciptakan sumber daya manusia yang
+            unggul dan sehat.
+          </li>
+          <li>
+            Transparansi dan Partisipasi: Mendorong transparansi pemerintahan
+            desa dan meningkatkan partisipasi masyarakat dalam pembangunan desa
+            melalui musyawarah dan keterbukaan informasi.
+          </li>
+        </ol>
+      </div>
+
+      <hr className="mt-10" />
+
+      <hr className="mt-10 mx-32" />
+      <div id="title" className="mt-3">
+        <h1 className="text-center font-bold italic text-2xl md:text-3xl lg:text-4xl">
           AKTIVITAS
         </h1>
         <hr className="mx-32 mt-3" />
@@ -183,10 +248,8 @@ function Home() {
         </div>
       </div>
 
-      <hr className="mt-10" />
-
       <div id="footer" className="mt-10">
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
