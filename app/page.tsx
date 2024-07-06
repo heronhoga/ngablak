@@ -36,26 +36,22 @@ function Home() {
         <div className="w-64 mx-auto sm:w-[500px] md:w-[700px] xl:w-[550px]">
           <Carousel images={images} />
         </div>
-        <div className="text-justify mt-3 xl:mr-16">
+        <div className="text-justify mx-6 xl:mx-0  mt-10 xl:mt-0  xl:mr-16 border p-10 rounded-lg shadow-lg">
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil sit
-            voluptas recusandae ratione asperiores quam quisquam maiores natus
-            accusantium voluptates doloremque, neque corporis inventore
-            temporibus laborum perferendis autem quas quibusdam. Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Expedita esse amet
-            cumque iste, nihil nisi et. Tempora, earum. Laudantium aliquam
-            voluptas quibusdam dolore eveniet soluta? Dolorum ea animi
-            consequatur esse. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Error magni quis soluta, quos porro, tenetur laborum id
-            voluptates, repellendus maiores quia pariatur fugit illum inventore
-            ab sint excepturi corrupti. Et! Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Sunt voluptates dolore, doloremque
-            atque sit ullam nisi quaerat quos voluptatibus ipsa animi qui nihil
-            architecto eveniet quia vitae, aut officia aperiam? Lorem ipsum
-            dolor sit, amet consectetur adipisicing elit. Dolorem nostrum autem
-            enim, non facilis dolore, accusamus, temporibus dignissimos nisi
-            labore esse reprehenderit odit praesentium? Exercitationem voluptas
-            similique harum. Sint, veritatis.
+            Desa Ngablak, Kecamatan Wonosamodro, Kabupaten Boyolali, adalah
+            sebuah desa yang terletak di daerah pegunungan dengan udara yang
+            sejuk dan pemandangan alam yang indah. Masyarakat desa ini sebagian
+            besar bermata pencaharian sebagai petani, peternak, dan pengrajin.
+            Pertanian di desa Ngablak meliputi berbagai komoditas, seperti padi,
+            jagung, sayuran, dan buah-buahan yang subur berkat tanah yang subur
+            dan iklim yang mendukung. Selain itu, peternakan sapi dan kambing
+            juga menjadi bagian penting dari ekonomi desa. Desa ini juga dikenal
+            dengan kerajinan tangan seperti anyaman bambu dan produk-produk
+            berbahan dasar alami lainnya. Kegiatan budaya dan tradisional sering
+            diadakan untuk melestarikan adat istiadat serta mempererat hubungan
+            antarwarga. Warga desa Ngablak hidup rukun dan saling membantu dalam
+            berbagai kegiatan sosial, menjadikan desa ini sebagai contoh
+            komunitas yang harmonis dan mandiri.
           </p>
         </div>
       </div>
@@ -225,24 +221,30 @@ function Home() {
               <div>
                 <p>
                   <span className="font-semibold italic">
-                    Alamat Kantor desa
-                  </span>{" "}
-                  : asdasdasd
+                    Alamat Kantor Desa
+                  </span>
+                  : Jl. Desa Ngablak No. 12, Ngablak, Wonosamodro, Boyolali,
+                  Jawa Tengah
                 </p>
               </div>
               <div>
                 <p>
                   <span className="font-semibold italic">Koordinat Desa</span> :
-                  -7.32679669434537, 110.61416596290738
+                  -7.42679669434537, 110.51416596290738
                 </p>
               </div>
               <div>
                 <p>
                   <span className="font-semibold italic">Luas Wilayah</span> :
-                  0.0 ha
+                  1,235 ha
                 </p>
               </div>
-              <div></div>
+              <div>
+                <p>
+                  <span className="font-semibold italic">Jumlah Penduduk</span>{" "}
+                  : 2,345 jiwa
+                </p>
+              </div>
             </div>
           </div>
         </div>
