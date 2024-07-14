@@ -27,7 +27,7 @@ function Galeri() {
       <Navbar />
       <div id="title" className="mt-10">
         <h1 className="text-center font-bold italic text-2xl md:text-3xl lg:text-4xl">
-          GALERI
+          GALERI - DESA NGABLAK
         </h1>
         <hr className="mx-32 mt-3" />
       </div>

@@ -37,6 +37,9 @@ function Navbar() {
         <Link href="/layanan" className="mx-1 md:mx-3">
           Layanan
         </Link>
+        <Link href="/artikel" className="mx-1 md:mx-3">
+          Artikel
+        </Link>
         <Link href="/kontak" className="ml-1 mr-1 md:ml-3 md:mr-10">
           Kontak Kami
         </Link>
@@ -65,6 +68,9 @@ function Navbar() {
         </Link>
         <Link href="/layanan" className="m-3" onClick={toggleMenu}>
           Layanan
+        </Link>
+        <Link href="/artikel" className="m-3">
+          Artikel
         </Link>
         <Link href="/kontak" className="m-3" onClick={toggleMenu}>
           Kontak Kami
