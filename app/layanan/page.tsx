@@ -3,6 +3,8 @@ import Navbar from "../created-components/Navbar";
 import LayananCard from "../created-components/LayananCard";
 import hospital from "../icons/hospital";
 import letter from "../icons/letter";
+import Footer from "../created-components/Footer";
+import Link from "next/link";
 
 function Layanan() {
   return (
@@ -22,11 +24,22 @@ function Layanan() {
         <hr className="mx-32 mt-3" />
       </div>
 
-      <div id="layananCardList" className="mx-3 mt-3 grid grid-cols-1 gap-6 sm:grid-cols-3">
-        <LayananCard icon={hospital} text="Layanan Posyandu" />
-        <LayananCard icon={letter} text="Layanan Surat" />
-        <LayananCard icon={hospital} text="Layanan tidak apa apa" />
-        <LayananCard icon={hospital} text="Layanan tidak ada" />
+      <div
+        id="layananCardList"
+        className="sm:mx-32 md:mx-20 lg:mx-42 mt-3 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+      >
+        <Link href={"/layanan/posyandu"}><LayananCard icon={hospital} text="Layanan Posyandu" /></Link>
+        <Link href={"/layanan/surat"}><LayananCard icon={letter} text="Layanan Surat" /></Link>
+        <Link href={"/layanan/posyandu"}><LayananCard icon={hospital} text="Layanan tidak apa apa" /></Link>
+        <Link href={"/layanan/surat"}><LayananCard icon={hospital} text="Layanan tidak ada" /></Link>
+        <Link href={"/layanan/posyandu"}><LayananCard icon={hospital} text="Layanan Posyandu" /></Link>
+        <Link href={"/layanan/surat"}><LayananCard icon={letter} text="Layanan Surat" /></Link>
+        <Link href={"/layanan/posyandu"}><LayananCard icon={hospital} text="Layanan tidak apa apa" /></Link>
+        <Link href={"/layanan/surat"}><LayananCard icon={hospital} text="Layanan tidak ada" /></Link>
+      </div>
+      
+      <div id="footer" className="mt-10">
+        <Footer />
       </div>
     </div>
   );
