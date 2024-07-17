@@ -2,7 +2,15 @@
 import React, { useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
-const GalleryCarousel = ({ images }) => {
+interface ImageObject {
+  image: string;
+}
+
+interface GalleryCarouselProps {
+  images: ImageObject[];
+}
+
+const GalleryCarousel: React.FC<GalleryCarouselProps> = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {
