@@ -13,7 +13,7 @@ function Navbar() {
   };
 
   return (
-    <div className="sticky top-0 py-2 flex items-center justify-between bg-blue-950 font-semibold rounded-b-[2.5rem] shadow-sm md:shadow-lg text-sm md:text-lg lg:text-xl text-white z-20">
+    <div className="sticky top-0 py-2 flex items-center justify-between bg-blue-950 font-semibold rounded-b-[2.5rem] shadow-sm md:shadow-lg text-sm md:text-lg text-white z-20">
       <div className="flex items-center">
         <Image
           src="/images/logo-kabupaten.png"
@@ -22,7 +22,7 @@ function Navbar() {
           height={682}
           className="h-12 w-[40px] md:h-24 md:w-[80px] mx-4"
         />
-        <h1 className="ml-2 md:ml-4">DESA NGABLAK</h1>
+        <h1 className="ml-2 md:ml-4 italic text-md md:text-2xl">DESA NGABLAK</h1>
       </div>
       <div className="hidden xl:flex">
         <Link href="/" className="mx-1 md:mx-3">
