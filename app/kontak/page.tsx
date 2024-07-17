@@ -1,10 +1,11 @@
 import React from "react";
 import Navbar from "../created-components/Navbar";
 import Footer from "../created-components/Footer";
+import Link from "next/link";   
 
 function Kontak() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       {/* NAVBAR */}
       <Navbar />
 
@@ -22,7 +23,7 @@ function Kontak() {
 
       <div
         id="contact"
-        className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
+        className="flex-grow mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
       >
         <div
           id="contactBox"
@@ -37,6 +38,8 @@ function Kontak() {
           <hr className="my-3" />
           <p>Telp. 0813 1234 5678</p>
           <p>Email. 4lqzj@example.com</p>
+          <hr className="my-3" />
+          <Link href={"https://www.google.com/maps/place/Desa+Ngablak/@-7.3267967,110.5141659,17z/data=!3m1!4b1!4m5!3m4!1s0x2e7a75d712309577:0xbbd3d826c3eeab2e!8m2!3d-7.3267967!4d110.5141659"} className="inline-block border border-green-600 px-3 py-2 rounded-lg bg-green-600 text-white">Hubungi kami via WhatsApp</Link>
         </div>
         <div className="flex justify-center">
           <div className="mx-auto">
@@ -46,7 +49,7 @@ function Kontak() {
               height="300"
               style={{ border: 0 }}
               loading="lazy"
-              className="w-full h-64 sm:w-96 md:w-[450px] md:h-[400px]"
+              className="w-64 h-64 sm:w-96 md:w-[300px] md:h-[250px] lg:w-[450px] lg:h-[400px]"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>

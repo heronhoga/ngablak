@@ -36,7 +36,7 @@ function Home() {
         <div className="w-64 mx-auto sm:w-[500px] md:w-[700px] xl:w-[550px]">
           <Carousel images={images} />
         </div>
-        <div className="text-justify mx-6 xl:mx-0  mt-10 xl:mt-0  xl:mr-16 border p-10 rounded-lg shadow-lg">
+        <div className="text-justify mx-6 xl:mx-0  mt-10 xl:mt-0  xl:mr-16 border p-10 rounded-lg shadow-lg border-black">
           <p>
             Desa Ngablak, Kecamatan Wonosamodro, Kabupaten Boyolali, adalah
             sebuah desa yang terletak di daerah pegunungan dengan udara yang
@@ -239,10 +239,29 @@ function Home() {
                   1,235 ha
                 </p>
               </div>
-              <div>
+              <div className="pb-3">
                 <p>
                   <span className="font-semibold italic">Jumlah Penduduk</span>{" "}
                   : 2,345 jiwa
+                </p>
+              </div>
+              <hr className="pt-3" />
+              <div>
+                <p>
+                  <span className="font-semibold italic">Dusun 1</span> : Dukuh
+                  Nganjung-anjung, Ngablak
+                </p>
+              </div>
+              <div>
+                <p>
+                  <span className="font-semibold italic">Dusun 2</span> : Dukuh
+                  Kemiri
+                </p>
+              </div>
+              <div>
+                <p>
+                  <span className="font-semibold italic">Dusun 3</span> : Dukuh
+                  Gajihan, Lemahmendak, Tegalsari, Tegalrejo
                 </p>
               </div>
             </div>
