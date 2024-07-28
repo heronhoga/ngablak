@@ -35,10 +35,10 @@ function Layanan() {
             <Link href={"/layanan/pendidikan"}>
               <LayananCard icon={BsBook} text="Pendidikan" />
             </Link>
-            <Link href={"/layanan/surat"}>
+            <Link href={"/layanan/publik"}>
               <LayananCard icon={letter} text="Layanan Publik" />
             </Link>
-            <Link href={"/layanan/posyandu"}>
+            <Link href={"/layanan/kesehatan"}>
               <LayananCard icon={hospital} text="Kesehatan" />
             </Link>
           </div>
