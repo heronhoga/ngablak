@@ -36,13 +36,12 @@ function Kontak() {
             Jawa Tengah 57382
           </p>
           <hr className="my-3" />
-          <p>Telp. +62-821-3478-0718</p>
+          <p>Telp. +62 821-3478-0718</p>
           <p>Email. pemerintahdesangablak@gmail.com</p>
           <hr className="my-3" />
           <Link
-            href={
-              "https://www.google.com/maps/place/Desa+Ngablak/@-7.3267967,110.5141659,17z/data=!3m1!4b1!4m5!3m4!1s0x2e7a75d712309577:0xbbd3d826c3eeab2e!8m2!3d-7.3267967!4d110.5141659"
-            }
+            href="https://wa.me/6282134780718"
+            target="_blank"
             className="inline-block border border-green-600 px-3 py-2 rounded-lg bg-green-600 text-white"
           >
             Hubungi kami via WhatsApp

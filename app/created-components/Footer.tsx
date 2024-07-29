@@ -1,6 +1,6 @@
 import React from "react";
 import { FiGlobe } from "react-icons/fi";
-import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
+import { AiOutlinePhone, AiOutlineMail, AiOutlineWhatsApp } from "react-icons/ai";
 import Image from "next/image";
 
 function Footer() {
@@ -13,7 +13,11 @@ function Footer() {
         <div className="flex flex-col md:flex-row items-center md:items-start space-y-2 md:space-y-0 md:space-x-3">
           <div className="flex items-center space-x-1">
             <AiOutlinePhone className="text-xl" />
-            <h3 className="text-sm md:text-md">+62-821-3478-0718 (Whatsapp)</h3>
+            <h3 className="text-sm md:text-md">+62 821-3478-0718</h3>
+          </div>
+          <div className="flex items-center space-x-1">
+            <AiOutlineWhatsApp className="text-xl" />
+            <h3 className="text-sm md:text-md">+62 821-3478-0718</h3>
           </div>
           <div className="flex items-center space-x-1">
             <AiOutlineMail className="text-xl" />
