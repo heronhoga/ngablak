@@ -13,11 +13,11 @@ function Footer() {
         <div className="flex flex-col md:flex-row items-center md:items-start space-y-2 md:space-y-0 md:space-x-3">
           <div className="flex items-center space-x-1">
             <AiOutlinePhone className="text-xl" />
-            <h3 className="text-sm md:text-md">08-xxxx-xxxx</h3>
+            <h3 className="text-sm md:text-md">+62-821-3478-0718 (Whatsapp)</h3>
           </div>
           <div className="flex items-center space-x-1">
             <AiOutlineMail className="text-xl" />
-            <h3 className="text-sm md:text-md">ngablak@gmail.com</h3>
+            <h3 className="text-sm md:text-md">pemerintahdesangablak@gmail.com</h3>
           </div>
         </div>
         <div className="flex flex-col items-center md:items-start space-y-1">

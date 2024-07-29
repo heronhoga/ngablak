@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../created-components/Navbar";
 import Footer from "../created-components/Footer";
-import Link from "next/link";   
+import Link from "next/link";
 
 function Kontak() {
   return (
@@ -32,14 +32,21 @@ function Kontak() {
           <p className="font-bold">Desa Ngablak</p>
           <hr className="my-3" />
           <p>
-            Jl. Suruh Wonosegoro, Dusun III, Ngablak, Kec. Wonosegoro, Kabupaten
-            Boyolali, Jawa Tengah 57382
+            Jl. Jrebeng Cukilan KM 3, Ngablak, Wonosamodro, Kabupaten Boyolali,
+            Jawa Tengah 57382
           </p>
           <hr className="my-3" />
-          <p>Telp. 0813 1234 5678</p>
-          <p>Email. 4lqzj@example.com</p>
+          <p>Telp. +62-821-3478-0718</p>
+          <p>Email. pemerintahdesangablak@gmail.com</p>
           <hr className="my-3" />
-          <Link href={"https://www.google.com/maps/place/Desa+Ngablak/@-7.3267967,110.5141659,17z/data=!3m1!4b1!4m5!3m4!1s0x2e7a75d712309577:0xbbd3d826c3eeab2e!8m2!3d-7.3267967!4d110.5141659"} className="inline-block border border-green-600 px-3 py-2 rounded-lg bg-green-600 text-white">Hubungi kami via WhatsApp</Link>
+          <Link
+            href={
+              "https://www.google.com/maps/place/Desa+Ngablak/@-7.3267967,110.5141659,17z/data=!3m1!4b1!4m5!3m4!1s0x2e7a75d712309577:0xbbd3d826c3eeab2e!8m2!3d-7.3267967!4d110.5141659"
+            }
+            className="inline-block border border-green-600 px-3 py-2 rounded-lg bg-green-600 text-white"
+          >
+            Hubungi kami via WhatsApp
+          </Link>
         </div>
         <div className="flex justify-center">
           <div className="mx-auto">

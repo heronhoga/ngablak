@@ -223,8 +223,7 @@ function Home() {
                   <span className="font-semibold italic">
                     Alamat Kantor Desa
                   </span>
-                  : Jl. Desa Ngablak No. 12, Ngablak, Wonosamodro, Boyolali,
-                  Jawa Tengah
+                  : Jl. Jrebeng Cukilan KM 3, Ngablak, Wonosamodro
                 </p>
               </div>
               <div>
@@ -236,13 +235,13 @@ function Home() {
               <div>
                 <p>
                   <span className="font-semibold italic">Luas Wilayah</span> :
-                  1,235 ha
+                  312 ha
                 </p>
               </div>
               <div className="pb-3">
                 <p>
                   <span className="font-semibold italic">Jumlah Penduduk</span>{" "}
-                  : 2,345 jiwa
+                  : 2.788 jiwa
                 </p>
               </div>
               <hr className="pt-3" />
