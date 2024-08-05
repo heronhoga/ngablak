@@ -19,11 +19,10 @@ const ArtikelCard: React.FC<ArtikelCardProps> = ({
       <img src={image} alt={title} className="w-full h-auto rounded-lg" />
       <h2 className="text-2xl my-4">{title}</h2>
       <p className="text-gray-700">{summary}</p>
-      <Link
-        href={articleUrl}
-        className="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
-      >
-        Selengkapnya
+      <Link legacyBehavior href={articleUrl}>
+        <a className="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">
+          Selengkapnya
+        </a>
       </Link>
     </div>
   );
