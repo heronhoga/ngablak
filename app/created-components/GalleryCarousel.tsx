@@ -28,7 +28,9 @@ const GalleryCarousel: React.FC<GalleryCarouselProps> = ({ images }) => {
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((imgObj, index) => (
-          <img key={index} src={imgObj.image} alt={`Image ${index + 1}`} className="w-full flex-shrink-0" />
+          <div key={index} className="w-full flex-shrink-0 aspect-w-16 aspect-h-9">
+            <img src={imgObj.image} alt={`Image ${index + 1}`} className="w-full h-full object-cover" />
+          </div>
         ))}
       </div>
       <button

@@ -139,13 +139,13 @@ function Home() {
             className="shadow-md h-64 w-72 sm:w-96 md:w-72 xl:w-[390px] relative overflow-hidden mx-auto rounded-xl"
           >
             <Image
-              src="/images/activitycard/farming.jpg"
+              src="/images/activitycard/pembersihan.jpg"
               layout="fill"
               objectFit="cover"
               alt="Farming"
             />
             <div className="absolute bottom-0 bg-black bg-opacity-50 text-white w-full text-center py-2 italic">
-              Pertanian
+              Pembersihan Sumber Air
             </div>
           </div>
           <div
@@ -153,13 +153,13 @@ function Home() {
             className="shadow-md h-64 w-72 sm:w-96 md:w-72 xl:w-[390px] relative overflow-hidden mx-auto rounded-xl"
           >
             <Image
-              src="/images/activitycard/organization.jpeg"
+              src="/images/activitycard/sendang.jpg"
               layout="fill"
               objectFit="cover"
-              alt="Organization"
+              alt="kerjabakti"
             />
             <div className="absolute bottom-0 bg-black bg-opacity-50 text-white w-full text-center py-2 italic">
-              Organisasi
+              Kerja Bakti
             </div>
           </div>
           <div
@@ -167,13 +167,13 @@ function Home() {
             className="shadow-md h-64 w-72 sm:w-96 md:w-72 xl:w-[390px] mx-auto relative overflow-hidden rounded-xl md:col-span-2 lg:col-span-1"
           >
             <Image
-              src="/images/activitycard/religion.jpg"
+              src="/images/activitycard/sekolah.jpg"
               layout="fill"
               objectFit="cover"
-              alt="Religion"
+              alt="sekolah"
             />
             <div className="absolute bottom-0 bg-black bg-opacity-50 text-white w-full text-center py-2 italic">
-              Keagamaan
+              Kegiatan Sekolah
             </div>
           </div>
         </div>
