@@ -29,13 +29,13 @@ export type ModalContent = {
       },
       {
         nama: "SD Negeri 2 Wonosamodro",
-        alamat: "Jl. Raya Wonosamodro No. 124",
+        alamat: "dukuh Gajihan, Ngablak, Wonosamodro, Kabupaten Boyolali, Jawa Tengah 57382",
         kepalaSekolah: "Suparmi S.Pd.",
         tenagaPendidik: 9,
-        ekstra: "Pramuka, Paskibra, PMR",
+        ekstra: "Pramuka",
         prestasi: "Juara 2 MIPA tingkat Kecamatan, Juara 3 lomba Menggambar dan Melukis tingkat Kecamatan",
-        jumlahMurid: 280,
-        fasilitas: "Perpustakaan, Laboratorium, Lapangan Olahraga",
+        jumlahMurid: 52,
+        fasilitas: "Perpustakaan, Lapangan Olahraga",
         imageUrl: "https://via.placeholder.com/400",
         description: "SD Negeri 2 Ngablak is committed to fostering a nurturing and inclusive learning environment. The school focuses on developing both academic and personal growth of its students."
       },
