@@ -1,40 +1,55 @@
 export type ModalContent = {
-    nama: string;
-    alamat: string;
-    kepalaSekolah: string;
-    tenagaPendidik: number;
-    ekstra: string;
-    prestasi: string;
-    jumlahMurid: number;
-    fasilitas: string;
-  };
+  nama: string;
+  alamat?: string;
+  kepalaSekolah: string;
+  tenagaPendidik: number;
+  ekstra?: string;
+  prestasi?: string;
+  jumlahMurid: number;
+  fasilitas: string;
+  imageUrl?: string;
+  description?: string;
+  luasSekolah?: string;
+};
+
   
   export const pendidikanData = {
     formal: [
       {
         nama: "SD Negeri 1 Wonosamodro",
-        alamat: "Jl. Raya Wonosamodro No. 123",
-        kepalaSekolah: "Budi Santoso",
-        tenagaPendidik: 20,
-        ekstra: "Pramuka, Paskibra, PMR",
-        prestasi: "Juara 1 Lomba Cerdas Cermat 2023",
-        jumlahMurid: 300,
+        kepalaSekolah: "Sujito, S.Pd.",
+        alamat: "Gajihan, Ngablak, Wonosamodro, Kabupaten Boyolali, Jawa Tengah 57382",
+        tenagaPendidik: 11,
+        ekstra: "Olahraga, Pramuka",
+        prestasi: "Juara 1 FTBI (Festival Bahasa Ibu) tahun 2023 tingkat Kecamatan, Juara 1 Lomba Olahraga tahun 2024 tingkat Kecamatan",
+        jumlahMurid: 103,
         fasilitas: "Perpustakaan, Laboratorium, Lapangan Olahraga",
         imageUrl: "https://via.placeholder.com/400",
-        description: "SD Negeri 1 Ngablak is a renowned primary school known for its excellence in academics and extracurricular activities. It aims to provide holistic education to its students."
+        description: "SD Negeri 1 Ngablak adalah sebuah sekolah yang berada di dukuh Gajihan, desa Ngablak, kecamatan Wonosamodro, kabupaten Boyolali."
       },
       {
         nama: "SD Negeri 2 Wonosamodro",
         alamat: "Jl. Raya Wonosamodro No. 124",
-        kepalaSekolah: "Siti Aminah",
-        tenagaPendidik: 18,
+        kepalaSekolah: "Suparmi S.Pd.",
+        tenagaPendidik: 9,
         ekstra: "Pramuka, Paskibra, PMR",
-        prestasi: "Juara 2 Lomba Cerdas Cermat 2023",
+        prestasi: "Juara 2 MIPA tingkat Kecamatan, Juara 3 lomba Menggambar dan Melukis tingkat Kecamatan",
         jumlahMurid: 280,
         fasilitas: "Perpustakaan, Laboratorium, Lapangan Olahraga",
         imageUrl: "https://via.placeholder.com/400",
         description: "SD Negeri 2 Ngablak is committed to fostering a nurturing and inclusive learning environment. The school focuses on developing both academic and personal growth of its students."
-      }
+      },
+      {
+        nama: "RA Miftakhul Ulum",
+        kepalaSekolah: "Herlina, S.Pd.",
+        alamat: "Kemiri, Ngablak, Wonosamodro, Kabupaten Boyolali, Jawa Tengah 57382",
+        tenagaPendidik: 4,
+        jumlahMurid: 45 ,
+        fasilitas: "2 Ruang Kelas, 1 Kantor, Speaker, Taman Bermain, Perpustakaan Mini, Mainan Indoor dan Outdoor, Toilet, Wastafel, Lingkungan nyaman yang jauh dari jalan raya",
+        imageUrl: "https://via.placeholder.com/400",
+        luasSekolah: "541 m2",
+        description: "RA Miftakhul Ulum adalah raihan pendidikan Islam yang berada di desa Ngablak, Kecamatan Wonosamodro, kabupaten Boyolali. RA Miftakhul Ulum didirikan pada tahun 2001."
+      },
     ],
     nonFormal: [
       {

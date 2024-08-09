@@ -89,7 +89,9 @@ function Pendidikan() {
                 />
                 <div className="mt-4 lg:mt-0 lg:ml-4 text-center lg:text-left">
                   <p className="text-lg font-semibold">{item.nama}</p>
-                  <p className="mt-2 text-base text-gray-600">{item.description}</p>
+                  <p className="mt-2 text-base text-gray-600">
+                    {item.description}
+                  </p>
                   <button
                     className="bg-blue-500 text-white p-2 rounded-lg mt-10 lg:mt-6"
                     onClick={() => handleModalToggle(item)}
@@ -103,7 +105,7 @@ function Pendidikan() {
 
           {showModal && modalContent && (
             <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full">
-              <div className="relative top-1/4 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+              <div className="relative top-1/4 mx-auto p-2 border w-96 shadow-lg rounded-md bg-white">
                 <div className="mt-3 text-center">
                   <h3 className="text-lg leading-6 font-medium text-gray-900">
                     Informasi Pendidikan - {modalContent.nama}
@@ -111,48 +113,54 @@ function Pendidikan() {
                   <hr className="my-3" />
                   <div className="mt-2 text-left">
                     <p>
-                      <span className="font-semibold italic">Nama SD</span>:{" "}
+                      <span className="font-semibold italic">Nama SD</span> :{" "}
                       {modalContent.nama}
                     </p>
                     <p>
-                      <span className="font-semibold italic">Alamat</span>:{" "}
+                      <span className="font-semibold italic">Alamat</span> :{" "}
                       {modalContent.alamat}
                     </p>
                     <p>
                       <span className="font-semibold italic">
                         Kepala Sekolah
                       </span>
-                      : {modalContent.kepalaSekolah}
+                       : {modalContent.kepalaSekolah}
                     </p>
                     <p>
                       <span className="font-semibold italic">
                         Jumlah Tenaga Pendidik
                       </span>
-                      : {modalContent.tenagaPendidik}
+                       : {modalContent.tenagaPendidik}
                     </p>
-                    <p>
-                      <span className="font-semibold italic">Ekstra</span>:{" "}
-                      {modalContent.ekstra}
-                    </p>
-                    <p>
-                      <span className="font-semibold italic">Prestasi</span>:{" "}
-                      {modalContent.prestasi}
-                    </p>
+                    {modalContent.ekstra && (
+                      <p>
+                        <span className="font-semibold italic">Ekstra</span> :{" "}
+                        {modalContent.ekstra}
+                      </p>
+                    )}
+                    {modalContent.prestasi && (
+                      <p>
+                        <span className="font-semibold italic">Prestasi</span> :{" "}
+                        {modalContent.prestasi}
+                      </p>
+                    )}
                     <p>
                       <span className="font-semibold italic">Jumlah Murid</span>
-                      : {modalContent.jumlahMurid}
+                       : {modalContent.jumlahMurid}
                     </p>
-                    <p>
-                      <span className="font-semibold italic">Fasilitas</span>:{" "}
-                      {modalContent.fasilitas}
-                    </p>
+                    {modalContent.fasilitas && (
+                      <p>
+                        <span className="font-semibold italic">Fasilitas</span> :{" "}
+                        {modalContent.fasilitas}
+                      </p>
+                    )}
                   </div>
                   <div className="items-center px-4 py-3">
                     <button
                       className="px-4 py-2 bg-blue-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-blue-700"
                       onClick={() => handleModalToggle(null)}
                     >
-                      Close
+                      Tutup
                     </button>
                   </div>
                 </div>
@@ -173,7 +181,7 @@ function Pendidikan() {
                     className="px-4 py-2 bg-blue-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-blue-700"
                     onClick={() => setShowImagePopup(false)}
                   >
-                    Close
+                    Tutup
                   </button>
                 </div>
               </div>
@@ -205,7 +213,9 @@ function Pendidikan() {
                 />
                 <div className="mt-4 lg:mt-0 lg:ml-4 text-center lg:text-left">
                   <p className="text-lg font-semibold">{item.nama}</p>
-                  <p className="mt-2 text-base text-gray-600">{item.description}</p>
+                  <p className="mt-2 text-base text-gray-600">
+                    {item.description}
+                  </p>
                   <button
                     className="bg-blue-500 text-white p-2 rounded-lg mt-10 lg:mt-6"
                     onClick={() => handleModalToggle(item)}
@@ -246,22 +256,28 @@ function Pendidikan() {
                       </span>
                       : {modalContent.tenagaPendidik}
                     </p>
-                    <p>
-                      <span className="font-semibold italic">Ekstra</span>:{" "}
-                      {modalContent.ekstra}
-                    </p>
-                    <p>
-                      <span className="font-semibold italic">Prestasi</span>:{" "}
-                      {modalContent.prestasi}
-                    </p>
+                    {modalContent.ekstra && (
+                      <p>
+                        <span className="font-semibold italic">Ekstra</span>:{" "}
+                        {modalContent.ekstra}
+                      </p>
+                    )}
+                    {modalContent.prestasi && (
+                      <p>
+                        <span className="font-semibold italic">Prestasi</span>:{" "}
+                        {modalContent.prestasi}
+                      </p>
+                    )}
                     <p>
                       <span className="font-semibold italic">Jumlah Murid</span>
                       : {modalContent.jumlahMurid}
                     </p>
-                    <p>
-                      <span className="font-semibold italic">Fasilitas</span>:{" "}
-                      {modalContent.fasilitas}
-                    </p>
+                    {modalContent.fasilitas && (
+                      <p>
+                        <span className="font-semibold italic">Fasilitas</span>:{" "}
+                        {modalContent.fasilitas}
+                      </p>
+                    )}
                   </div>
                   <div className="items-center px-4 py-3">
                     <button
