@@ -73,7 +73,7 @@ export type ModalContent = {
         prestasi: "Juara 2 Lomba Hafalan Hadis 2021",
         jumlahMurid: 100,
         fasilitas: "Ruang Belajar, Perpustakaan, Aula",
-        imageUrl: "https://via.placeholder.com/400",
+        imageUrl: "../images/pendidikan/nonformal/kemiri.jpg",
         description: "TPQ Kemiri provides a supportive environment for children to learn the Al-Qur'an and Islamic teachings, emphasizing character building and religious knowledge."
       }
     ]

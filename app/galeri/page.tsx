@@ -25,9 +25,40 @@ const imageCards = [
     imageSrc: "/images/imagecard/pembersihan-sumber-air.jpg",
     caption: "Pembersihan Sumber Air",
   },
-  { imageSrc: "/images/imagecard/desa-ngablak-pagi.jpg", caption: "Desa Ngablak Pagi Hari" },
-  { imageSrc: "/images/imagecard/sawah-ngablak.jpg", caption: "Sawah Desa Ngablak" },
+  {
+    imageSrc: "/images/imagecard/desa-ngablak-pagi.jpg",
+    caption: "Desa Ngablak Pagi Hari",
+  },
+  {
+    imageSrc: "/images/imagecard/sawah-ngablak.jpg",
+    caption: "Sawah Desa Ngablak",
+  },
+  {
+    imageSrc: "/images/imagecard/petilasan.jpg",
+    caption: "Petilasan Desa Ngablak",
+  },
+  {
+    imageSrc: "/images/imagecard/jagung-ibu.jpg",
+    caption: "Menjemur Jagung",
+  },
+  {
+    imageSrc: "/images/imagecard/lapangan-anak.jpg",
+    caption: "Kegiatan Anak-anak di Lapangan",
+  },
+  {
+    imageSrc: "/images/imagecard/singkong.jpg",
+    caption: "Menjemur Singkong",
+  },
+  {
+    imageSrc: "/images/imagecard/jagung-memarut.jpg",
+    caption: "Kegiatan Memarut Jagung",
+  },
+  {
+    imageSrc: "/images/imagecard/sawah-siang.jpg",
+    caption: "Kondisi Sawah di Musim Kemarau",
+  },
 ];
+
 
 function Galeri() {
   return (
