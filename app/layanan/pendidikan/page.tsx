@@ -8,8 +8,6 @@ function Pendidikan() {
   const [activeSection, setActiveSection] = useState("formal");
   const [showModal, setShowModal] = useState(false);
   const [modalContent, setModalContent] = useState<ModalContent | null>(null);
-  const [showImagePopup, setShowImagePopup] = useState(false);
-  const [popupImage, setPopupImage] = useState<string | null>(null);
 
   const handleModalToggle = (content: ModalContent | null) => {
     setModalContent(content);
@@ -17,8 +15,7 @@ function Pendidikan() {
   };
 
   const handleImageClick = (imageUrl: string) => {
-    setPopupImage(imageUrl);
-    setShowImagePopup(true);
+    window.open(imageUrl, "_blank");
   };
 
   return (
@@ -81,12 +78,14 @@ function Pendidikan() {
               className="mx-10 mt-10 border border-slate-700 rounded-lg p-4"
             >
               <div className="flex flex-col items-center space-y-6 lg:flex-row lg:space-y-0 lg:space-x-4">
-                <img
-                  src={item.imageUrl}
-                  alt={item.nama}
-                  className="w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 rounded-lg cursor-pointer"
-                  onClick={() => handleImageClick(item.imageUrl)}
-                />
+                <div className="w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64">
+                  <img
+                    src={item.imageUrl}
+                    alt={item.nama}
+                    className="w-full h-full object-cover rounded-lg cursor-pointer"
+                    onClick={() => handleImageClick(item.imageUrl)}
+                  />
+                </div>
                 <div className="mt-4 lg:mt-0 lg:ml-4 text-center lg:text-left">
                   <p className="text-lg font-semibold">{item.nama}</p>
                   <p className="mt-2 text-base text-gray-600">
@@ -124,13 +123,13 @@ function Pendidikan() {
                       <span className="font-semibold italic">
                         Kepala Sekolah
                       </span>
-                       : {modalContent.kepalaSekolah}
+                      : {modalContent.kepalaSekolah}
                     </p>
                     <p>
                       <span className="font-semibold italic">
                         Jumlah Tenaga Pendidik
                       </span>
-                       : {modalContent.tenagaPendidik}
+                      : {modalContent.tenagaPendidik}
                     </p>
                     {modalContent.ekstra && (
                       <p>
@@ -146,12 +145,12 @@ function Pendidikan() {
                     )}
                     <p>
                       <span className="font-semibold italic">Jumlah Murid</span>
-                       : {modalContent.jumlahMurid}
+                      : {modalContent.jumlahMurid}
                     </p>
                     {modalContent.fasilitas && (
                       <p>
-                        <span className="font-semibold italic">Fasilitas</span> :{" "}
-                        {modalContent.fasilitas}
+                        <span className="font-semibold italic">Fasilitas</span>{" "}
+                        : {modalContent.fasilitas}
                       </p>
                     )}
                   </div>
@@ -163,26 +162,6 @@ function Pendidikan() {
                       Tutup
                     </button>
                   </div>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {showImagePopup && popupImage && (
-            <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex justify-center items-center">
-              <div className="relative mx-auto p-5 border shadow-lg rounded-md bg-white">
-                <img
-                  src={popupImage}
-                  alt="Popup"
-                  className="max-w-full h-auto rounded-lg"
-                />
-                <div className="text-center mt-4">
-                  <button
-                    className="px-4 py-2 bg-blue-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-blue-700"
-                    onClick={() => setShowImagePopup(false)}
-                  >
-                    Tutup
-                  </button>
                 </div>
               </div>
             </div>
@@ -205,12 +184,15 @@ function Pendidikan() {
               className="mx-10 mt-10 border border-slate-700 rounded-lg p-4"
             >
               <div className="flex flex-col items-center space-y-6 lg:flex-row lg:space-y-0 lg:space-x-4">
-                <img
-                  src={item.imageUrl}
-                  alt={item.nama}
-                  className="w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 rounded-lg cursor-pointer"
-                  onClick={() => handleImageClick(item.imageUrl)}
-                />
+                <div className="w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64">
+                  <img
+                    src={item.imageUrl}
+                    alt={item.nama}
+                    className="w-full h-full object-cover rounded-lg cursor-pointer"
+                    onClick={() => handleImageClick(item.imageUrl)}
+                  />
+                </div>
+
                 <div className="mt-4 lg:mt-0 lg:ml-4 text-center lg:text-left">
                   <p className="text-lg font-semibold">{item.nama}</p>
                   <p className="mt-2 text-base text-gray-600">
@@ -287,26 +269,6 @@ function Pendidikan() {
                       Close
                     </button>
                   </div>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {showImagePopup && popupImage && (
-            <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex justify-center items-center">
-              <div className="relative mx-auto p-5 border shadow-lg rounded-md bg-white">
-                <img
-                  src={popupImage}
-                  alt="Popup"
-                  className="max-w-full h-auto rounded-lg"
-                />
-                <div className="text-center mt-4">
-                  <button
-                    className="px-4 py-2 bg-blue-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-blue-700"
-                    onClick={() => setShowImagePopup(false)}
-                  >
-                    Close
-                  </button>
                 </div>
               </div>
             </div>

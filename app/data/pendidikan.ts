@@ -46,14 +46,14 @@ export type ModalContent = {
         tenagaPendidik: 4,
         jumlahMurid: 45 ,
         fasilitas: "2 Ruang Kelas, 1 Kantor, Speaker, Taman Bermain, Perpustakaan Mini, Mainan Indoor dan Outdoor, Toilet, Wastafel, Lingkungan nyaman yang jauh dari jalan raya",
-        imageUrl: "https://via.placeholder.com/400",
+        imageUrl: "../images/pendidikan/formal/ra-miftakhul-ulum.jpg",
         luasSekolah: "541 m2",
         description: "RA Miftakhul Ulum adalah raihan pendidikan Islam yang berada di desa Ngablak, Kecamatan Wonosamodro, kabupaten Boyolali. RA Miftakhul Ulum didirikan pada tahun 2001."
       },
     ],
     nonFormal: [
       {
-        nama: "TPQ Nganjung-anjung",
+        nama: "TPA Nganjung-anjung (TPA ZAHRA AL JANNAH)",
         alamat: "Jl. Nganjung-anjung No. 10",
         kepalaSekolah: "Eko Wijaya",
         tenagaPendidik: 15,
@@ -61,11 +61,23 @@ export type ModalContent = {
         prestasi: "Juara 1 Lomba Hafalan Al-Qur'an 2022",
         jumlahMurid: 120,
         fasilitas: "Ruang Belajar, Perpustakaan, Aula",
-        imageUrl: "https://via.placeholder.com/400",
+        imageUrl: "../images/pendidikan/nonformal/nganjung-anjung-azzahra.jpg",
         description: "TPQ Nganjung-anjung is dedicated to teaching children the basics of reading and understanding the Al-Qur'an, while also fostering moral and ethical values."
       },
       {
-        nama: "TPQ Kemiri",
+        nama: "TPA Nganjung-anjung (TPA NGUDI ILMU)",
+        alamat: "Jl. Nganjung-anjung No. 10",
+        kepalaSekolah: "Eko Wijaya",
+        tenagaPendidik: 15,
+        ekstra: "Hafalan Al-Qur'an, Hadis, Doa",
+        prestasi: "Juara 1 Lomba Hafalan Al-Qur'an 2022",
+        jumlahMurid: 120,
+        fasilitas: "Ruang Belajar, Perpustakaan, Aula",
+        imageUrl: "../images/pendidikan/nonformal/nganjung-anjung-ngudi-ilmu.jpg",
+        description: "TPQ Nganjung-anjung is dedicated to teaching children the basics of reading and understanding the Al-Qur'an, while also fostering moral and ethical values."
+      },
+      {
+        nama: "TPA Kemiri",
         alamat: "Jl. Kemiri No. 22",
         kepalaSekolah: "Siti Nurhaliza",
         tenagaPendidik: 10,
@@ -74,6 +86,18 @@ export type ModalContent = {
         jumlahMurid: 100,
         fasilitas: "Ruang Belajar, Perpustakaan, Aula",
         imageUrl: "../images/pendidikan/nonformal/kemiri.jpg",
+        description: "TPQ Kemiri provides a supportive environment for children to learn the Al-Qur'an and Islamic teachings, emphasizing character building and religious knowledge."
+      },
+      {
+        nama: "TPA Gajihan",
+        alamat: "Jl. Kemiri No. 22",
+        kepalaSekolah: "Siti Nurhaliza",
+        tenagaPendidik: 10,
+        ekstra: "Hafalan Al-Qur'an, Hadis, Doa",
+        prestasi: "Juara 2 Lomba Hafalan Hadis 2021",
+        jumlahMurid: 100,
+        fasilitas: "Ruang Belajar, Perpustakaan, Aula",
+        imageUrl: "../images/pendidikan/nonformal/gajihan-madin.jpg",
         description: "TPQ Kemiri provides a supportive environment for children to learn the Al-Qur'an and Islamic teachings, emphasizing character building and religious knowledge."
       }
     ]
