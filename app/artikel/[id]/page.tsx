@@ -36,7 +36,11 @@ const ArtikelDetail = () => {
           alt={artikel.title}
           className="w-full h-auto mt-4 rounded-lg"
         />
-        <p className="mt-6 text-lg text-gray-700">{artikel.fulltext}</p>
+        <div className="mt-6 space-y-4 text-lg text-gray-700">
+          {artikel.fulltext.split("\n").map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
+        </div>
       </div>
       <Footer />
     </div>
