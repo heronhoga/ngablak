@@ -72,9 +72,7 @@ function Home() {
         </h3>
         <hr className="mt-3" />
         <p className="text-justify mt-3">
-          "Menjadikan Desa Ngablak sebagai desa mandiri yang berdaya saing,
-          berbudaya, dan berwawasan lingkungan dalam mewujudkan kesejahteraan
-          masyarakat."
+          "Terwujudnya Desa Ngablak yang Aman, Maju, dan Sejahtera Bermartabat."
         </p>
       </div>
 
@@ -90,29 +88,19 @@ function Home() {
         <hr className="mt-3" />
         <ol className="list-decimal p-5 text-justify">
           <li>
-            Pemberdayaan Ekonomi: Meningkatkan kesejahteraan masyarakat melalui
-            pengembangan potensi lokal, pemberdayaan usaha mikro, kecil, dan
-            menengah (UMKM), serta mendorong inovasi ekonomi kreatif.
+            Melaksanakan pembangunan desa yang transparan, jujur, dan bijaksana
           </li>
           <li>
-            Peningkatan Infrastruktur: Membangun dan meningkatkan infrastruktur
-            desa yang mendukung aktivitas ekonomi, pendidikan, kesehatan, dan
-            sosial masyarakat.
+            Melaksanakan pembangunan dan fasilitas lainnya secara merata.
           </li>
           <li>
-            Pelestarian Budaya dan Lingkungan: Melestarikan dan mengembangkan
-            budaya lokal serta menjaga kelestarian lingkungan melalui
-            program-program berkelanjutan.
+            Melaksanakan pemanfaatan pemberdayaan manusia dengan azas gotong royong.
           </li>
           <li>
-            Pendidikan dan Kesehatan: Meningkatkan akses dan kualitas pendidikan
-            serta pelayanan kesehatan untuk menciptakan sumber daya manusia yang
-            unggul dan sehat.
+            Melaksanakan kegiatan di bidang ekonomi kerakyatan dan keagamaan.
           </li>
           <li>
-            Transparansi dan Partisipasi: Mendorong transparansi pemerintahan
-            desa dan meningkatkan partisipasi masyarakat dalam pembangunan desa
-            melalui musyawarah dan keterbukaan informasi.
+            Menciptakan kehidupan yang tentram dan aman.
           </li>
         </ol>
       </div>
