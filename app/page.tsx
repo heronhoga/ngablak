@@ -38,20 +38,16 @@ function Home() {
         </div>
         <div className="text-justify mx-6 xl:mx-0  mt-10 xl:mt-0  xl:mr-16 border p-10 rounded-lg shadow-lg border-black">
           <p>
-            Desa Ngablak, Kecamatan Wonosamodro, Kabupaten Boyolali, adalah
-            sebuah desa yang terletak di daerah pegunungan dengan udara yang
-            sejuk dan pemandangan alam yang indah. Masyarakat desa ini sebagian
-            besar bermata pencaharian sebagai petani, peternak, dan pengrajin.
-            Pertanian di desa Ngablak meliputi berbagai komoditas, seperti padi,
-            jagung, sayuran, dan buah-buahan yang subur berkat tanah yang subur
-            dan iklim yang mendukung. Selain itu, peternakan sapi dan kambing
-            juga menjadi bagian penting dari ekonomi desa. Desa ini juga dikenal
-            dengan kerajinan tangan seperti anyaman bambu dan produk-produk
-            berbahan dasar alami lainnya. Kegiatan budaya dan tradisional sering
-            diadakan untuk melestarikan adat istiadat serta mempererat hubungan
-            antarwarga. Warga desa Ngablak hidup rukun dan saling membantu dalam
-            berbagai kegiatan sosial, menjadikan desa ini sebagai contoh
-            komunitas yang harmonis dan mandiri.
+            Desa Ngablak di Boyolali dikenal karena nama uniknya yang
+            terinspirasi dari suara kepakan burung blades yang bermigrasi ke
+            sana. Wilayah ini juga memiliki sejarah terkait Kerajaan Mataram
+            Islam dan Keraton Surakarta. Pada tahun 1800-an, Pangeran
+            Djojolelono, keturunan Keraton Surakarta, melarikan diri dari
+            tentara Belanda dan menetap di Ngablak. Keturunannya, Eyang Ahmad
+            Sarpan, menjadi pemimpin pertama desa tersebut. Untuk diakui oleh
+            pemerintah Hindia Belanda, Eyang Ahmad Sarpan harus membuktikan
+            darah bangsawannya dengan memberikan uang gulden dan hermina, sesuai
+            tradisi bahwa kepala desa adalah perpanjangan tangan Keraton.
           </p>
         </div>
       </div>
