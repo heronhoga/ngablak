@@ -57,6 +57,10 @@ const imageCards = [
     imageSrc: "/images/imagecard/sawah-siang.jpg",
     caption: "Kondisi Sawah di Musim Kemarau",
   },
+  {
+    imageSrc: "/images/imagecard/bapak-dan-kambing.jpg",
+    caption: "Mengembala Kambing",
+  },
 ];
 
 
