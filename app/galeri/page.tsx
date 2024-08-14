@@ -61,6 +61,10 @@ const imageCards = [
     imageSrc: "/images/imagecard/bapak-dan-kambing.jpg",
     caption: "Mengembala Kambing",
   },
+  {
+    imageSrc: "/images/imagecard/pembelajaran-tk-budi-lestari.jpg",
+    caption: "Pembelajaran di TK Budi Lestari",
+  },
 ];
 
 
